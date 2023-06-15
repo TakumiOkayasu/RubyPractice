@@ -38,7 +38,7 @@ p 56.7.ceil		# 小数点以下切りあげ
 puts "price #{ 114514 * 1.08 }"	# 計算されたもの表示
 puts 'price #{ 114514 * 1.08 }'	# 文字列として表示
 
-name = "Ritta3D"
+name = "HogeHoge"
 puts "name is #{ name }"
 
 puts "hello" * 2	# ２回出力
@@ -51,7 +51,7 @@ puts name
 
 # ?は真偽値
 p name.empty?			# false
-p name.include?( "R" )	# true
+p name.include?( "H" )	# true
 
 # 配列の定義
 colors = [ "red", "blue", "yellow" ]
@@ -82,16 +82,16 @@ p colors.sort
 
 # ハッシュ
 # key / value
-# scores = { "Rittai" => 114514, "ThreeD" => 100 }
+# scores = { "HogeName" => 114514, "Fuga" => 100 }
 
 # シンボルオブジェクト（コロンから始まる識別子のようなもの）
 # こっちの方が高速
-# scores = { :Rittai => 114514, :ThreeD => 100 }
-scores = { Rittai: 114514, ThreeD: 100 }
+# scores = { :HogeName => 114514, :Fuga => 100 }
+scores = { HogeName: 114514, Fuga: 100 }
 
-p scores[ :Rittai ]
-scores[ :ThreeD ] = 1000
-p scores[ :ThreeD ]
+p scores[ :HogeName ]
+scores[ :Fuga ] = 1000
+p scores[ :Fuga ]
 
 # 要素数
 p scores.size
@@ -103,7 +103,7 @@ p scores.keys
 p scores.values
 
 # key が存在するかを問う
-p scores.has_key?( :Rittai )
+p scores.has_key?( :HogeName )
 
 # 変換
 x = 50
@@ -144,7 +144,7 @@ if v > 10
 elsif v > 5
 	puts "so so..."
 else
-	puts "fuck"
+	puts "fxxk"
 end
 
 signal = "red"
@@ -157,7 +157,7 @@ when "blue"
 when "yellow"
 	puts "caution!"
 else 
-	puts "fuuuuuuuck"
+	puts "undefined"
 end
 
 # 繰り返し
@@ -255,7 +255,7 @@ class User
 	def show
 		# self.name とすると @name になるので
 		# puts "#{self.name}" もOK
-		puts "fuck #{@name}"
+		puts "fxxk #{@name}"
 		sayPrivateMessage
 	end
 
